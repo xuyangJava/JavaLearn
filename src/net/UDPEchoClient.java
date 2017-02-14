@@ -6,7 +6,7 @@ import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
 
-public class UDPEchoClientTimeout {
+public class UDPEchoClient {
 
     private static final int TIMEOUT = 3000; // 超时时间
     private static final int MAXTRIES = 5; // 超时前若没收到响应最多重发5次
@@ -15,7 +15,7 @@ public class UDPEchoClientTimeout {
     private static final int SERVER_PORT = 9092;
 
     public static void main(String[] args) throws IOException {
-        String msg = "UDP client test!";
+        String msg = "UDP client test! 15464444444444566666666656456465456456456456456465";
         byte[] bytesToSend = msg.getBytes();
         InetAddress serverAddress = InetAddress.getByName(SERVER_IP);
         int servPort = SERVER_PORT;
